@@ -8,7 +8,7 @@ Code in repository are meant to be executed using Google Colab, and requires min
 
 ## Get the Dataset
 
-Download the PLOS and eLife datasets from Huggingface.
+Download the PLOS (https://huggingface.co/datasets/BioLaySumm/BioLaySumm2025-PLOS) and eLife (https://huggingface.co/datasets/BioLaySumm/BioLaySumm2025-eLife) datasets from Huggingface. 
 
 ## End-to-End Pipeline
 ### Step 1: Preprocessing and Extract Salient Sentences
