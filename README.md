@@ -1,14 +1,14 @@
 # BioLaySumm 2025
 ## Lay Summarization of Biomedical Research Articles and Radiology Reports @ BioNLP Workshop, ACL 2025
 
-This is the repo for Team MIRAGE's submission for BiolaySumm 2025!
+This is the repo for Team MIRAGE's submission for BiolaySumm Shared Task at the BioNLP Workshop, ACL 2025. The goal of this shared task is to push the boundaries of research on biomedical lay summarization.
 
 ## Repo Structure
 Code in repository are meant to be executed using Google Colab, and requires minimally of 1 T4 GPU for inference. Fine-tuning requires minimally 1 L4 GPU. Code in `preprocessing_script` comes from CoLab notebooks and are meant to go through the datasets and extract the top 40 sentences based on different methods of evaluation.
 
 ## Get the Dataset
 
-Download the PLOS and eLife datasets from the [BioLaySumm Organizers](https://biolaysumm.org/#data)
+Download the PLOS and eLife datasets from Huggingface.
 
 ## End-to-End Pipeline
 ### Step 1: Preprocessing and Extract Salient Sentences
@@ -23,7 +23,7 @@ Our preprocessing mostly uses embeddings from BioBERT to make judgements about w
    we rank sentences according to their similarity to the mean embedding of the uncondensed article, and selectthe top 40 sentences.
 7. The reverse of 6, where we segment the article to the same four core sections, extract the top 40 sentences and prepend the title and keywords.
 
-Each of the scripts are found in the `preprocessing_script` and can be reimported into CoLab for use directly. You will need a GPU for this, and likely one stronger than the free tier GPUs.
+Each of the scripts are found in the `preprocessing_script` and can be reimported into CoLab for use directly. 
 
 ### Available Scripts;
 -[`preprocess23.py`](./preprocessing_script/preprocess23.py) --For Strategies 2 (title) & 3 (title + keywords)
@@ -78,7 +78,7 @@ pip install rouge-score bert-score summa
 ```
 
 ### Summarization
-The actual summarization code can be found in `inference.py`. It uses Llama-3-8B-Instruct to do inference, but you'll need a real good GPU to do this or it'll take forever. The code was designed to run on Hyak and the SLURM file to submit the code is also in the repo. Submit using the SLURM file and you should be able to generate summaries.
+Run 'inference.py' to generate summaries using Llama-3-8b-instruct. 
 
 
 ### Counterfactual Data Augmentation Experiment ###
