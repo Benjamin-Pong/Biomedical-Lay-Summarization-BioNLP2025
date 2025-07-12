@@ -6,20 +6,6 @@ This is the repo for Team MIRAGE's submission for BiolaySumm 2025!
 ## Repo Structure
 Code in repository are meant to be executed using Google Colab, and requires minimally of 1 T4 GPU for inference. Fine-tuning requires minimally 1 L4 GPU. Code in `preprocessing_script` comes from CoLab notebooks and are meant to go through the datasets and extract the top 40 sentences based on different methods of evaluation.
 
-## Setup instructions
-
-```bash
-git clone https://github.com/Abimaelh/bio-laysum.git
-cd bio-laysum
-```
-## Create a Python Environment
-
-```bash
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-```
-
 ## Get the Dataset
 
 Download the PLOS and eLife datasets from the [BioLaySumm Organizers](https://biolaysumm.org/#data)
