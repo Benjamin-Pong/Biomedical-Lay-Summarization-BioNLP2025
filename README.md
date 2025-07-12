@@ -1,7 +1,7 @@
 # BioLaySumm 2025
 ## Lay Summarization of Biomedical Research Articles and Radiology Reports @ BioNLP Workshop, ACL 2025
 
-This is the repo for Team MIRAGE's submission for BiolaySumm Shared Task at the BioNLP Workshop, ACL 2025. The goal of this shared task is to push the boundaries of research on biomedical lay summarization.
+This repository presents Team MIRAGE's system submission for BiolaySumm Shared Task at the BioNLP Workshop, ACL 2025. The goal of this shared task is to push the boundaries of research on biomedical lay summarization.
 
 ## Repo Structure
 Code in repository are meant to be executed using Google Colab, and requires minimally of 1 T4 GPU for inference. Fine-tuning requires minimally 1 L4 GPU. Code in `preprocessing_script` comes from CoLab notebooks and are meant to go through the datasets and extract the top 40 sentences based on different methods of evaluation.
