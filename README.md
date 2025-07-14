@@ -1,7 +1,14 @@
 # BioLaySumm 2025
 ## Lay Summarization of Biomedical Research Articles and Radiology Reports @ BioNLP Workshop, ACL 2025
 
-This repository presents Team MIRAGE's system submission for BiolaySumm Shared Task at the BioNLP Workshop, ACL 2025. The goal of this shared task is to push the boundaries of research on biomedical lay summarization.
+This repository presents Team MIRAGE's system submission for BiolaySumm Shared Task at the BioNLP Workshop, ACL 2025. The goal of this projet is to summarize biomedical research articles in a form that is simple and digestible to a broader audience, through state-of-the-art Natural Language Processing techniques
+
+## System Overview
+
+1. Data Preprocessing and Extractive Summarization through Retrieval-based techniques: Methods to extract the more salient information from complex chunks of texts.
+2. Model fine-tuning: Use state-of-the-art NLP models for summarization.
+3. Post-processing: Definition-insertion through a medical ontology.
+4. Model Evaluation: Comprehensive evaluation using metrics for Relevance (ROUGE-1, ROUGE-2, ROUGE-L, BERTScore), Readability(Flesch-Kincaid Grade Level, Dale-Chall, Coleman-Liau Index) and Factuality (SummaC, AlignScore)
 
 ## Repo Structure
 Code in repository are meant to be executed using Google Colab, and requires minimally of 1 T4 GPU for inference. Fine-tuning requires minimally 1 L4 GPU. Code in `preprocessing_script` comes from CoLab notebooks and are meant to go through the datasets and extract the top 40 sentences based on different methods of evaluation.
