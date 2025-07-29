@@ -1,7 +1,9 @@
 # BioLaySumm 2025
 ## Lay Summarization of Biomedical Research Articles and Radiology Reports @ BioNLP Workshop, ACL 2025
 
-This repository presents Team MIRAGE's system submission for BiolaySumm Shared Task at the BioNLP Workshop, ACL 2025. The goal of this projet is to summarize biomedical research articles in a form that is simple and digestible to a broader audience, through state-of-the-art Natural Language Processing techniques
+This repository presents Team MIRAGE's system submission for BiolaySumm Shared Task at the BioNLP Workshop, ACL 2025. The goal of this projet is to summarize biomedical research articles in a form that is simple and digestible to a broader audience, through state-of-the-art Natural Language Processing techniques.
+
+Resulting publication @ https://aclanthology.org/2025.bionlp-share.28/
 
 ## System Overview
 
