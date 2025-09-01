@@ -97,3 +97,30 @@ Run counterfactual_finetune.py to finetune model on counterfactually augmented d
 ### Postprocessing: Definition-insertion ###
 As a postprocessing step, after generating summaries, run postprocessing.py to generate term-definition dictionary. The output will be a list of dictionaries containing two fields; term-definition dictionary and the summaries.
 Run postprocessing_inference.py to paraphrase summaries using term-dictionary
+
+# Citation
+
+If you refer to any of the software, scripts, or ideas used in this system, please cite the following:
+
+```bibtext
+@inproceedings{pong-etal-2025-mirages,
+    title = "{MIRAGES} at {B}io{L}ay{S}umm2025: The Impact of Search Terms and Data Curation for Biomedical Lay Summarization",
+    author = "Pong, Benjamin  and
+      Chen, J u - H u i  and
+      Jiang, Jonathan  and
+      Jimenez, Abimael  and
+      Vahadi, Melody",
+    editor = "Soni, Sarvesh  and
+      Demner-Fushman, Dina",
+    booktitle = "Proceedings of the 24th Workshop on Biomedical Language Processing (Shared Tasks)",
+    month = aug,
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.bionlp-share.28/",
+    doi = "10.18653/v1/2025.bionlp-share.28",
+    pages = "232--239",
+    ISBN = "979-8-89176-276-3",
+    abstract = "Biomedical articles are often inaccessible to non-experts due to their technical complexity. To improve readability and factuality of lay summaries, we built on an extract-then-summarize framework by experimenting with novel extractive summarization strategies and employing Low Rank Adaptation (LoRA) fine-tuning of Meta-Llama-3-8B-Instruct on data selected by these strategies. We also explored counterfactual data augmentation and post-processing definition insertion to further enhance factual grounding and accessibility. Our best performing system treats the article{'}s title and keywords (i.e. search terms) as a single semantic centroid and ranks sentences by their semantic similarity to this centroid. This constrained selection of data serves as input for fine-tuning, achieving marked improvements in readability and factuality of downstream abstractive summaries while maintaining relevance. Our approach highlights the importance of quality data curation for biomedicallay summarization, resulting in 4th best overall performance and 2nd best Readability performance for the BioLaySumm 2025 Shared Task at BioNLP 2025."
+}
+```
